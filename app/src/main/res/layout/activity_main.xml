@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name=".MainActivity"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:background="#E8CECE"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/game_IMG_heart1"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:src="@drawable/ic_heart_pic" />
+
+            <ImageView
+                android:id="@+id/game_IMG_heart2"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_heart_pic" />
+
+            <ImageView
+                android:id="@+id/game_IMG_heart3"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_heart_pic" />
+
+            <TextView
+                android:id="@+id/game_LBL_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="15dp"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:background="#00BCD4"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/purple_700"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter00"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim00"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim01"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim02"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim10"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/game_IMG_victim11"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim12"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/purple_700"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim20"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim21"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter22"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim22"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#673AB7"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter30"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim30"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter31"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim31"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_700"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim32"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim40"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#018786"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim41"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/teal_200"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/game_IMG_hunter42"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_cat_plays"
+                        android:visibility="gone"/>
+                    <ImageView
+                        android:id="@+id/game_IMG_victim42"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center"
+                        android:src="@drawable/ic_mouse_toy"
+                        android:visibility="gone"/>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#FFEB3B"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#EACBC8"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_BTN_moveUp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/up"
+                    android:textColor="#E66A43"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#E66A43"
+                    app:strokeWidth="3dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#EACBC8"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_BTN_moveLeft"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/left"
+                    android:textColor="#E66A43"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#E66A43"
+                    app:strokeWidth="3dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#00E66A43">
+
+                </com.google.android.material.button.MaterialButton>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_BTN_moveRight"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/right"
+                    android:textColor="#E66A43"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#E66A43"
+                    app:strokeWidth="3dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#EACBC8"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/game_BTN_moveDown"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/down"
+                    android:textColor="#E66A43"
+                    app:cornerRadius="50dp"
+                    app:strokeColor="#E66A43"
+                    app:strokeWidth="3dp">
+
+                </com.google.android.material.button.MaterialButton>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">The Hunting Game</string>
+    <string name="up">Move Up</string>
+    <string name="down">Move Down</string>
+    <string name="right">Go Right</string>
+    <string name="left">Go Left</string>
+</resources>
