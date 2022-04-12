@@ -18,7 +18,7 @@ import com.google.android.material.button.MaterialButton;
 public class MainActivity extends AppCompatActivity {
 
     private Handler handler;
-    private int delay = 1000;
+    private final int DELAY = 1000;
 
     private final int ROWS = 5;
     private final int COLS = 3;
@@ -104,7 +104,9 @@ public class MainActivity extends AppCompatActivity {
             vibrateMultipleTimes();
             setCurrentLives();
             placeAtStart();
-            Toast.makeText(this, "Oops, the hunter catch you", Toast.LENGTH_LONG).show();
+            if(cuurentLives > 0) {
+                Toast.makeText(this, "Oops, the hunter catch you", Toast.LENGTH_SHORT).show();
+            }
         }
     }
 
@@ -120,17 +122,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setCurrentLives() {
+        cuurentLives--;
+        livesView[cuurentLives].setVisibility(View.INVISIBLE);
         if(cuurentLives == 0){
             saveLastScore = seconds;
             gameOver();
         }
-        cuurentLives--;
-        livesView[cuurentLives].setVisibility(View.INVISIBLE);
     }
 
     private void gameOver() {
         handler.removeCallbacksAndMessages(null);
-        Toast.makeText(MainActivity.this,"YOU GOT CAUGHT!!!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,"No more attempts.\nYOU GOT CAUGHT!!!", Toast.LENGTH_LONG).show();
         finish();
     }
 
@@ -274,14 +276,21 @@ public class MainActivity extends AppCompatActivity {
     private void tick() {
         handler = new Handler();
         handler.postDelayed(() -> {
-            seconds++;
-            game_LBL_score.setText("" + (++seconds));
 
-            if (direction != -1) {
-                directItem(direction);
-            }
-            logic();
-        }, delay);
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    ++seconds;
+                    game_LBL_score.setText("" + seconds);
+
+                    if (direction != -1) {
+                        directItem(direction);
+                    }
+                    logic();
+                }
+            });
+
+        }, DELAY);
     }
 
 
